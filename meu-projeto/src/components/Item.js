@@ -1,10 +1,23 @@
-function Item(props) {
+import React from 'react';
+import PropTypes from 'prop-types';
+
+function Item({marca, ano_lancamento}) {
     return (
         <>
-            <li>{props.marca}</li>
-            <p>Teste</p>
+            <li>
+                {marca} - {ano_lancamento}
+            </li>
         </>
     )
+};
+
+Item.prototype = {
+    marca: PropTypes.string,
+    ano_lancamento: PropTypes.number,
+};
+Item.defaultProps= {
+    marca: 'faltou a Marca',
+    ano_lancamento: '0',
 }
 
 export default Item
