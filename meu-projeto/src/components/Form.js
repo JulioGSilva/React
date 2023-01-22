@@ -11,6 +11,10 @@ function Form() {
                 <div>
                     <input type="text" placeholder="Digite seu nome"/>
                 </div>
+                <br />
+                <div>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" />
+                </div>
                 <div>
                     <input type="submit" value="cadastrar" />
                 </div>
